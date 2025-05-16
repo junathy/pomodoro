@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta 
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        /> 
+        <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        />
+        <meta 
+            name="viewport"
+            content="width=device-width,
+                    initial-scale=1.0"/>
+        <title>Pomodoro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Pomodoro</h1>
+        <main class="main">
+            <section class="timer-circle"
+                id="timer">15:00
+            </section>
+            <section class="control-buttons">
+                <button id="pause-resume-btn">
+                    Pause
+                </button>
+                <button id="restart-btn">
+                    Restart
+                </button>
+                <input type="number" id="time-input" placeholder="Enter minutes"/>
+                <button id="set-time-btn">Set Timer</button>
+                
+            </section>
+        </main>
+        <script src="renderer.js"></script>
+    </body>
+</html>
